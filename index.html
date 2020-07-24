@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kynza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav class="page-nav">
+                <ul>
+                    <li>Product</li>
+                    <li>Blog</li>
+                    <li>Team</li>
+                </ul>
+                <div class="logo">
+                    <img src="./images/kynza-logo.png" alt="">
+                </div>
+                    <ul>
+                    <li>About</li>
+                    <li>Resources</li>
+                    <li>Learn</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="header-information">
+            <div class="header-text">
+            <h1>Save towards your goals, and reconnect with your community</h1>
+            <p>Utilize historic methods in reaching your financial goals, re-establish ties with your community while making strides towrds independence and success</p>
+            <div class="email-submission">
+                <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
+            </div>
+            </div>
+            <div class="header-image">
+                <img src="./images/header-image.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="about-page">
+            <div class="page-title">
+                <h3>About Kynza</h3>
+            </div>
+            
+            <div class="about-page-content">
+                <div class="about-page-text second-header">
+                    
+                    <h2>A new way to work towards financial independence</h2>
+                    <p>Kynza was created as a means for us to support eachother in reaching our financial goals. Before banking institutions, communities relied on one another. ROSCAs provide individuals who might not have access to financial institutions an opportunity to save funds. Often, members of saving groups share familial, cultural or geographical aspects.</p>
+                    <p> Within you Kynza community, members of your choosing will pool their money into a common fund, organized around montly contributions. A single member withdraws the lump sum at the beginning of the cycle, and the proccess repeats until everyone has benefited equally! Empowering people and keeping communities in control.</p>
+                   <div class="button">
+                    <button>Keep in touch</button>
+                   </div>
+                </div>
+                
+                <div class="app-demo-slider">
+                   
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/slide-1.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/slide-2.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/slide-3.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./images/slide-4.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="resources-page">
+            <div class="page-title">
+                <h3>Our Vision</h3>
+            </div>
+            <div class="resource-page-content">
+                <div class="resource-text second-header" >
+                    
+                    <h2>Kynza believes that financial independence and community engagement aren't mutually exclusive</h2>
+                </div>
+                <div class="resource-page-container">
+                    <div class="resources">
+                        <div class="link-overlay">
+                            <div class="container">
+        
+                                <div class="content">
+                                <a href="http://www.fao.org/3/y4094E/y4094e04.htm" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./images/blue-dress.png">
+                                    <div class="content-details fadeIn-top">
+                                    <h3>Benefits of community saving</h3>
+                                    
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="caption"><h4>Collaboration</h4></div>
+                    </div>
+
+
+                     <div class="resources">
+                        <div class="link-overlay">
+                            <div class="container">
+        
+                                <div class="content">
+                                <a href="http://investeddevelopment.com/2012/04/the-benefits-of-informal-savings-groups/" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./images/community.png">
+                                    <div class="content-details fadeIn-top">
+                                    <h3>What is an Informal Savings Group</h3>
+                                    <p>Benefits of ROSCA's</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="caption"><h4>Community</h4></div>
+                    </div>
+
+
+                    <div class="resources">
+                        <div class="link-overlay">
+                            <div class="container">
+        
+                                <div class="content">
+                                <a href="https://www.tandfonline.com/doi/abs/10.1080/00220388.2010.536219?scroll=top&needAccess=true&journalCode=fjds20" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./images/henna-hand.jpg">
+                                    <div class="content-details fadeIn-top">
+                                    <h3>Academic Article</h3>
+                                    <p>ROSCAs in Urban Ethiopia</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="caption"><h4>Culture</h4></div>
+                    </div>
+
+                    <div class="resources">
+                        <div class="link-overlay">
+                            <div class="container">
+        
+                                <div class="content">
+                                <a href="https://medium.com/@sunilsachdev/fintech-meets-rotating-savings-and-credit-associations-ffe30564f130" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="./images/credit.png">
+                                    <div class="content-details fadeIn-top">
+                                    <h3>Blog</h3>
+                                    <p>Fintech Meets Rotating Savings and Credit Associations</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="caption"><h4>Credit</h4></div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="learn-page">
+       
+            <div class="learn-page-content">
+                <div class="page-title">
+                    <h3>Kynza can help</h3>
+                </div>
+                <div class="learning-information">
+                <div class="learning-text">
+                    <h2 class="second-header">Saving doesn't have to be stressful</h2>
+                    <p>The modern banking system often includes hidden fees, high interest rates, and can be downright confusing. Free yourself from these hassles rely on those you can trust</p>
+                   <div class="buttons">
+                    <div class="email-submission">
+                        <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
+                    </div>
+
+                   </div>
+                </div>
+                <div class="learning-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fXMYRtLTYP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2 class="second-header">Sign up and keep in touch</h2>
+                    <p>Stay in the know on releases, launches, events and more!</p>
+                </div>
+                <div class="contact-input">
+                    <div class="email-submission">
+                        <input type="text" id="email" name="email" placeholder="email"> <button> submit </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
