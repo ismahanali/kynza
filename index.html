@@ -9,39 +9,39 @@
 </head>
 <body>
     <header>
-        <nav>
-            <nav class="page-nav">
-                <ul>
-                    <li>Product</li>
-                    <li>Blog</li>
-                    <li>Team</li>
-                </ul>
-                <div class="logo">
-                    <img src="./images/kynza-logo.png" alt="">
-                </div>
-                    <ul>
-                    <li>About</li>
-                    <li>Resources</li>
-                    <li>Learn</li>
-                    <li>Contact</li>
-                </ul>
+        <div class="header-wrapper">
+            <nav>
+                <nav class="page-nav">
+                    <ul class="left-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="logo">
+                        <img src="./images/kynza-logo.png" alt="">
+                    </div>
+                </nav>
             </nav>
-        </nav>
-        <div class="header-information">
-            <div class="header-text">
-            <h1>Save towards your goals, and reconnect with your community</h1>
-            <p>Utilize historic methods in reaching your financial goals, re-establish ties with your community while making strides towrds independence and success</p>
-            <div class="email-submission">
-                <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
+            <div class="header-information">
+                <div class="header-text">
+                <h1>Save towards your goals, and reconnect with your community</h1>
+                <p>Utilize historic methods in reaching your financial goals, re-establish ties with your community while making strides towrds independence and success</p>
+                <div class="email-submission">
+                    <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
+                </div>
+                </div>
+                <div class="header-image">
+                    <span class="circle"></span>
+                    <img src="./images/header-2.png" alt="">
+                </div>
             </div>
-            </div>
-            <div class="header-image">
-                <img src="./images/header-image.png" alt="">
-            </div>
+
         </div>
+        
     </header>
     <section class="main">
-        <div class="about-page">
+        <div class="about-page" id="about">
             <div class="page-title">
                 <h3>About Kynza</h3>
             </div>
@@ -134,7 +134,7 @@
             </div>
         </div>
 
-        <div class="resources-page">
+        <div class="resources-page" id="resources">
             <div class="page-title">
                 <h3>Our Vision</h3>
             </div>
@@ -230,7 +230,7 @@
             </div>
         </div>
 
-        <div class="learn-page">
+        <div class="learn-page" id="learn">
        
             <div class="learn-page-content">
                 <div class="page-title">
@@ -255,7 +255,7 @@
             </div>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" id="contact">
             <div class="contact-content">
                 <div class="contact-text">
                     <h2 class="second-header">Sign up and keep in touch</h2>
