@@ -1,134 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kynza</title>
 </head>
+
 <body>
     <header>
         <div class="header-wrapper">
+            <div class="logo">
+                <p>kynza</p>
+            </div>
             <nav>
-                <nav class="page-nav">
-                    <ul class="left-nav">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#learn">Learn</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="logo">
-                        <img src="./images/kynza-logo.png" alt="">
+                <!--    Made by Erik Terwan    -->
+                <!--   24th of November 2015   -->
+                <!--    All rights reserved    -->
+                <nav class="page-nav" role='navigation'>
+                    <div class="hamburger-container"></div>
+                    <div id="menuToggle">
+                        <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+                        <input type="checkbox" />
+
+                        <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+                        <ul id="menu">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
-                </nav>
-            </nav>
-            <div class="header-information">
-                <div class="header-text">
-                <h1>Save towards your goals, and reconnect with your community</h1>
-                <p>Utilize historic methods in reaching your financial goals, re-establish ties with your community while making strides towrds independence and success</p>
+        </div>
+        </nav>
+
+
+        </nav>
+        <div class="header-information">
+            <div class="header-text">
+                <h1>Meet your goals & empower your community.</h1>
                 <div class="email-submission">
-                    <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
+                    <input type="text" id="email" name="email" placeholder="EMAIL"> <button> STAY UPDATED </button>
                 </div>
-                </div>
-                <div class="header-image">
+            </div>
+            <!-- <div class="header-image">
                     <span class="circle"></span>
                     <img src="./images/header-2.png" alt="">
-                </div>
-            </div>
+                </div> -->
+        </div>
 
         </div>
-        
+
     </header>
     <section class="main">
+        <div class="picture-wrapper">
+        </div>
         <div class="about-page" id="about">
             <div class="page-title">
-                <h3>About Kynza</h3>
+                
             </div>
-            
+
             <div class="about-page-content">
                 <div class="about-page-text second-header">
-                    
-                    <h2>A new way to work towards financial independence</h2>
-                    <p>Kynza was created as a means for us to support eachother in reaching our financial goals. Before banking institutions, communities relied on one another. ROSCAs provide individuals who might not have access to financial institutions an opportunity to save funds. Often, members of saving groups share familial, cultural or geographical aspects.</p>
-                    <p> Within you Kynza community, members of your choosing will pool their money into a common fund, organized around montly contributions. A single member withdraws the lump sum at the beginning of the cycle, and the proccess repeats until everyone has benefited equally! Empowering people and keeping communities in control.</p>
-                   <div class="button">
-                    <button>Keep in touch</button>
-                   </div>
+                    <h3>About us</h3>
+  
+                    <p>Facilitating ROSCA usage for the digital age, Kynza will streamline the entire rosca experience in
+                        one consolidated platform, with all the tools you need at your fingertips. <br>
+
+                        Kynza, looks to preserve ROSCA's time-tested peer-to-peer mutual aid model, by streamlining
+                        the administrative requirements of running a successful rosca in a digital age.
+
+                        Kynza, provides you with the tools to harness the power of community with barrier-free setup,
+                        communication and accounting features. Simply invite and pool with your own trusted networks and
+                        we'll take care of the rest.</p>
+
+                    <div class="button">
+                        <button>Keep in touch</button>
+                    </div>
                 </div>
-                
+
                 <div class="app-demo-slider">
-                   
-<div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="./images/slide-1.png" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="./images/slide-2.png" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="./images/slide-3.png" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-    
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="./images/slide-4.png" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
+                    <div class="slideshow-container">
 
-      
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
-    </div>
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="./images/slide-1.png" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="./images/slide-2.png" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="./images/slide-3.png" style="width:100%">
+                            <div class="text">Caption Three</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="./images/slide-4.png" style="width:100%">
+                            <div class="text">Caption Three</div>
+                        </div>
+
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+
 
                 </div>
             </div>
@@ -136,123 +178,162 @@
 
         <div class="resources-page" id="resources">
             <div class="page-title">
-                <h3>Our Vision</h3>
+                
             </div>
             <div class="resource-page-content">
-                <div class="resource-text second-header" >
-                    
-                    <h2>Kynza believes that financial independence and community engagement aren't mutually exclusive</h2>
+                <div class="resource-text second-header">
+
+                    <h2>Kynza believes that financial independence and community engagement aren't mutually exclusive
+                    </h2>
                 </div>
                 <div class="resource-page-container">
                     <div class="resources">
                         <div class="link-overlay">
                             <div class="container">
-        
+
                                 <div class="content">
-                                <a href="http://www.fao.org/3/y4094E/y4094e04.htm" target="_blank">
-                                    <div class="content-overlay"></div>
-                                    <img class="content-image" src="./images/blue-dress.png">
-                                    <div class="content-details fadeIn-top">
-                                    <h3>Benefits of community saving</h3>
-                                    
-                                    </div>
-                                </a>
+                                    <a href="http://www.fao.org/3/y4094E/y4094e04.htm" target="_blank">
+                                        <div class="content-overlay"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240"><path d="M20.485 2.515a.75.75 0 00-1.06 1.06A10.465 10.465 0 0122.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 001.06 1.061A11.965 11.965 0 0024 11c0-3.314-1.344-6.315-3.515-8.485zm-15.91 1.06a.75.75 0 00-1.06-1.06A11.965 11.965 0 000 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 001.06-1.06A10.465 10.465 0 011.5 11c0-2.9 1.174-5.524 3.075-7.425zM8.11 7.11a.75.75 0 00-1.06-1.06A6.98 6.98 0 005 11a6.98 6.98 0 002.05 4.95.75.75 0 001.06-1.061 5.48 5.48 0 01-1.61-3.89 5.48 5.48 0 011.61-3.888zm8.84-1.06a.75.75 0 10-1.06 1.06A5.48 5.48 0 0117.5 11a5.48 5.48 0 01-1.61 3.889.75.75 0 101.06 1.06A6.98 6.98 0 0019 11a6.98 6.98 0 00-2.05-4.949zM14 11a2 2 0 01-1.25 1.855v8.395a.75.75 0 01-1.5 0v-8.395A2 2 0 1114 11z"></path></svg>
+                                        <div class="content-details fadeIn-top">
+                                            <h3>Benefits of community saving</h3>
+
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                        
-                        </div>
-                        <div class="caption"><h4>Collaboration</h4></div>
-                    </div>
 
-
-                     <div class="resources">
-                        <div class="link-overlay">
-                            <div class="container">
-        
-                                <div class="content">
-                                <a href="http://investeddevelopment.com/2012/04/the-benefits-of-informal-savings-groups/" target="_blank">
-                                    <div class="content-overlay"></div>
-                                    <img class="content-image" src="./images/community.png">
-                                    <div class="content-details fadeIn-top">
-                                    <h3>What is an Informal Savings Group</h3>
-                                    <p>Benefits of ROSCA's</p>
-                                    </div>
-                                </a>
-                                </div>
-                            </div>
-                        
                         </div>
-                        <div class="caption"><h4>Community</h4></div>
+                        <div class="caption">
+                            <h4>Collaboration</h4>
+                        </div>
                     </div>
 
 
                     <div class="resources">
                         <div class="link-overlay">
                             <div class="container">
-        
+
                                 <div class="content">
-                                <a href="https://www.tandfonline.com/doi/abs/10.1080/00220388.2010.536219?scroll=top&needAccess=true&journalCode=fjds20" target="_blank">
-                                    <div class="content-overlay"></div>
-                                    <img class="content-image" src="./images/henna-hand.jpg">
-                                    <div class="content-details fadeIn-top">
-                                    <h3>Academic Article</h3>
-                                    <p>ROSCAs in Urban Ethiopia</p>
-                                    </div>
-                                </a>
+                                    <a href="http://investeddevelopment.com/2012/04/the-benefits-of-informal-savings-groups/"
+                                        target="_blank">
+                                        <div class="content-overlay"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240"><path fill-rule="evenodd" d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z"></path><path d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z"></path></svg>
+                                        <div class="content-details fadeIn-top">
+                                            <h3>What is an Informal Savings Group</h3>
+                                            
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                        
+
                         </div>
-                        <div class="caption"><h4>Culture</h4></div>
+                        <div class="caption">
+                            <h4>Community</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="resources">
+                        <div class="link-overlay">
+                            <div class="container">
+
+                                <div class="content">
+                                    <a href="https://www.tandfonline.com/doi/abs/10.1080/00220388.2010.536219?scroll=top&needAccess=true&journalCode=fjds20"
+                                        target="_blank">
+                                        <div class="content-overlay"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240"><path fill-rule="evenodd" d="M2.25 4a.25.25 0 00-.25.25v15.5c0 .138.112.25.25.25h3.178L14 10.977a1.75 1.75 0 012.506-.032L22 16.44V4.25a.25.25 0 00-.25-.25H2.25zm3.496 17.5H21.75a1.75 1.75 0 001.75-1.75V4.25a1.75 1.75 0 00-1.75-1.75H2.25A1.75 1.75 0 00.5 4.25v15.5c0 .966.784 1.75 1.75 1.75h3.496zM22 19.75v-1.19l-6.555-6.554a.25.25 0 00-.358.004L7.497 20H21.75a.25.25 0 00.25-.25zM9 9.25a1.75 1.75 0 11-3.5 0 1.75 1.75 0 013.5 0zm1.5 0a3.25 3.25 0 11-6.5 0 3.25 3.25 0 016.5 0z"></path></svg>
+                                        <div class="content-details fadeIn-top">
+                                            <h3>Documentary</h3>
+                                          
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="caption">
+                            <h4>Documentary</h4>
+                        </div>
                     </div>
 
                     <div class="resources">
                         <div class="link-overlay">
                             <div class="container">
-        
+
                                 <div class="content">
-                                <a href="https://medium.com/@sunilsachdev/fintech-meets-rotating-savings-and-credit-associations-ffe30564f130" target="_blank">
-                                    <div class="content-overlay"></div>
-                                    <img class="content-image" src="./images/credit.png">
-                                    <div class="content-details fadeIn-top">
-                                    <h3>Blog</h3>
-                                    <p>Fintech Meets Rotating Savings and Credit Associations</p>
-                                    </div>
-                                </a>
+                                    <a href="https://medium.com/@sunilsachdev/fintech-meets-rotating-savings-and-credit-associations-ffe30564f130"
+                                        target="_blank">
+                                        <div class="content-overlay"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240"><path fill-rule="evenodd" d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0122.25 21H1.75A1.75 1.75 0 010 19.25V4.75zm1.75-.25a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V4.75a.25.25 0 00-.25-.25H1.75z"></path><path fill-rule="evenodd" d="M5 8.75A.75.75 0 015.75 8h11.5a.75.75 0 010 1.5H5.75A.75.75 0 015 8.75zm0 4a.75.75 0 01.75-.75h5.5a.75.75 0 010 1.5h-5.5a.75.75 0 01-.75-.75z"></path></svg>
+                                        <div class="content-details fadeIn-top">
+                                            <h3>Credit Associations Blog</h3>
+                                           
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                        
+
                         </div>
-                        <div class="caption"><h4>Credit</h4></div>
+                        <div class="caption">
+                            <h4>Credit</h4>
+                        </div>
                     </div>
                 </div>
-            
+
             </div>
         </div>
 
-        <div class="learn-page" id="learn">
-       
-            <div class="learn-page-content">
-                <div class="page-title">
-                    <h3>Kynza can help</h3>
+        <div class="team-page" id="team">
+        <div class="team-content">
+            <div class="team-header">
+                <p>Our People</p>
+            </div>
+        <div class="team-bios">
+            <div class="team-member">
+                <div class="team-picture">
+                    
                 </div>
-                <div class="learning-information">
-                <div class="learning-text">
-                    <h2 class="second-header">Saving doesn't have to be stressful</h2>
-                    <p>The modern banking system often includes hidden fees, high interest rates, and can be downright confusing. Free yourself from these hassles rely on those you can trust</p>
-                   <div class="buttons">
-                    <div class="email-submission">
-                        <input type="text" id="email" name="email" placeholder="Learn More"> <button> submit </button>
-                    </div>
-
-                   </div>
-                </div>
-                <div class="learning-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fXMYRtLTYP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <div class="team-information">
+                    <h2>Name</h2>
+                    <p>Position</p>
+                    <p>School</p>
                 </div>
                 
             </div>
+            <div class="team-member">
+                <div class="team-picture">
+
+                </div>
+                <div class="team-information">
+                    <h2>Name</h2>
+                    <p>Position</p>
+                    <p>School</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-picture">
+                    
+                </div>
+                <div class="team-information">
+                    <h2>Name</h2>
+                    <p>Position</p>
+                    <p>School</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-picture">
+                    
+                </div>
+                <div class="team-information">
+                    <h2>Name</h2>
+                    <p>Position</p>
+                    <p>School</p>
+                </div>
+            </div>
+        </div>
+        </div>
+           
         </div>
 
         <div class="contact-form" id="contact">
@@ -269,6 +350,7 @@
             </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>
