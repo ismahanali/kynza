@@ -272,7 +272,7 @@ a:hover
   color: rgba(18,41,71,0.8);;
 }
 header {
-  min-height: 65.8vh;
+  height: 600px;
   /* background: radial-gradient(circle, rgba(240,122,88,1) 0%, rgba(241,83,74,1) 100%); */
   background-color: #e4a924;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ input[type=text] {
 
 .header-img {
   position: relative;
-  left: 10%;
+  left: 11%;
   right: 8%;
 
 }
@@ -327,8 +327,8 @@ input[type=text] {
 
   .circle {
     margin-top: -7%;
-    height: 45vw;
-    width: 45vw;
+    height: 700px;
+    width: 700px;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
@@ -340,7 +340,7 @@ input[type=text] {
 
 
 .header-image img {
-  height: 32.25vw;
+  height: 464px;
 
 }
 
