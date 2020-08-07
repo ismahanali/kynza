@@ -338,7 +338,7 @@ input[type=text] {
 }
 
 .circle {
-  margin-top: -2%;
+  margin-top: -5%;
   height: 650px;
   width: 650px;
   position: absolute;
@@ -389,7 +389,7 @@ input[type=text] {
 }
 
 .information-bar {
-  padding-top: 10vh;
+  padding-top: 5%;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
@@ -594,7 +594,7 @@ img {vertical-align: middle; margin: 0 auto; }
 .fade img,
 .slider-img {
   width: 101%;
-    height: 81vh;
+    height: 600px;
 }
 
 /* On smaller screens, decrease text size */
@@ -699,7 +699,7 @@ button {
 
 .screen {
   overflow: hidden;
-  height: 87vh;
+  height: 600px;
   position: absolute;
   z-index: 99;
   top: 2.1%;
