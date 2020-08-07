@@ -272,7 +272,7 @@ a:hover
   color: rgba(18,41,71,0.8);;
 }
 header {
-  height: 85.8vh;
+  min-height: 65.8vh;
   /* background: radial-gradient(circle, rgba(240,122,88,1) 0%, rgba(241,83,74,1) 100%); */
   background-color: #e4a924;
   background-repeat: no-repeat;
