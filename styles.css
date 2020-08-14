@@ -8,6 +8,224 @@
 
 
 /* Header Page */
+.header-wrapper{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.nav-wrapper {
+  background-color: #e4a924;
+}
+
+.logo p {
+  color: rgba(250, 241, 200, 0.959) ;
+  padding-top: 4vw;
+  text-transform: capitalize;
+  font-size: 31px;
+  font-weight: 500;
+  /* line-height: 20px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-nav {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+ }
+/* hamburger menu */
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  right: 72px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 100;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  font-family: 'Poppins', sans-serif;
+
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+
+
+#menuToggle span
+{
+  font-family: 'Poppins', sans-serif;
+
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  position: relative;
+  background: rgba(18,41,71,0.8);;
+  border-radius: 3px;
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+
+.k {
+  color: rgba(18,41,71,0.8);;
+}
+
+
+.header-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e4a924;
+  color: #fff;
+
+}
+
+.header-text {
+  margin-right: 50px;
+  margin-left: -23px;
+
+}
+
+.header-text p {
+  width: 99%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: rgba(250, 241, 200, 0.959);
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+
+
+.top-text .bold {
+  font-weight: 600;
+  color: rgba(18,41,71,0.8);
+  font-size: 35px !important;
+}
+
+.email-submission {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  opacity: .6;
+  padding-top: 20px;
+
+}
+input[type=text] {
+    width: 417px;
+    padding: 18px 150px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+
+
+
+
 
 .main {
   background: radial-gradient(circle, rgba(247,235,179,1) 0%, rgba(241,173,74,1) 100%);
@@ -88,7 +306,7 @@
     text-align: center;
 }
 header {
-  height: 600px;
+  height: 572px;
   /* background: radial-gradient(circle, rgba(240,122,88,1) 0%, rgba(241,83,74,1) 100%); */
   background-color: #e4a924;
   background-repeat: no-repeat;
@@ -96,17 +314,8 @@ header {
   min-width: 100%;
 }
 
-.header-wrapper{
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  margin: 0 auto;
-  align-content: center;
-}
-.nav-wrapper {
-  background-color: #e4a924;
 
-}
+
 
 
 a
@@ -128,215 +337,18 @@ a:hover
   color: tomato;
 }
 
-#menuToggle
-{
-  display: block;
-  position: fixed;
-  top: 50px;
-  right: 72px;
-  font-family: 'Poppins', sans-serif;
-  z-index: 100;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  font-family: 'Poppins', sans-serif;
-
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
- .page-nav {
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  position: fixed;
- }
-
-#menuToggle span
-{
-  font-family: 'Poppins', sans-serif;
-
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  margin-right: 30px;
-  position: relative;
-  background: rgba(18,41,71,0.8);;
-  border-radius: 3px;
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
-}
-
-.logo p {
-  color: rgba(250, 241, 200, 0.959) ;
-  padding-top: 4vw;
-  text-transform: capitalize;
-  font-size: 31px;
-  font-weight: 500;
-  /* line-height: 20px; */
-  font-family: 'Poppins', sans-serif;
-
-}
-.k {
-  color: rgba(18,41,71,0.8);;
-}
-
-.email-submission {
-  display: flex;
-  flex-direction: row;
-  width: 88%;
-  opacity: .6;
-  padding-top: 3vh;
-
-}
-input[type=text] {
-    width: 417px;
-    padding: 18px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-
-.header-information {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #e4a924;
-  color: #fff;
-
-}
-.header-text {
-
-}
-.header-text p {
-  width: 99%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  color: rgba(250, 241, 200, 0.959);
-  font-size: 40px;
-  padding-top: 20px;
-}
-
-.top-text .bold {
-  font-weight: 600;
-  color: rgba(18,41,71,0.8);
-  font-size: 35px !important;
-}
-
-
-
 .header-image {
-  height: 31.25vw;
   position: static;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
+
+.header-border {
+  border: 1px solid white;
+  padding: 29px;
+}
 .circle {
   margin-top: -5%;
   height: 650px;
@@ -355,7 +367,8 @@ input[type=text] {
 }
 
 .header-image img {
-  height: 428px;
+  height: 415px;
+  margin-top: 41px;
 
 }
 
@@ -380,13 +393,6 @@ input[type=text] {
 
 /* Header Page Ends */
 
-.picture-wrapper{
-  width: 100%;
-  height: 75vh;
-  background: url(./images/friends-header.jpg);
-
-  background-size: cover;
-}
 
 .information-bar {
   padding-top: 5%;
@@ -401,7 +407,9 @@ input[type=text] {
   opacity: .8;
 }
 .type {
-  border-bottom: 2px solid rgba(250, 241, 200, 0.959) ;
+  border-bottom: 1px solid #e4a924;
+  color: #e4a924;
+  
 }
 /* About Page Styles */
 .about-page {
@@ -412,7 +420,6 @@ input[type=text] {
 
 }
 .page-title {
-    padding-top: 4%;
     padding-bottom: 5%;
 }
 .page-title h3 {
@@ -442,12 +449,13 @@ svg {
 }
 .about-page-text {
   font-family: 'Poppins', sans-serif;
-
     display: flex;
     flex-direction: column;
     color: #1b1b1b;
-    width: 50%;
-    height: 80vh;
+    width: 60%;
+    font-size: 20px;
+    height: 35.625em;
+    text-align: left;
     padding: 12px;
     margin-right: 5%;
 }
@@ -464,20 +472,7 @@ svg {
 .hyperlink a:hover{
   color: green;
 }
-.about-page-text {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  color: #1b1b1b;
-  width: 60%;
-  height: 85vh;
-  padding: 12px;
-  margin-right: 5%;
-  font-size: 20px;
-  text-align: left;
-  /* font-family: 'Feijoa', Georgia, 'Times New Roman', Times, serif; */
 
-}
 .about-page-text p, h3 {
   font-weight: normal;
   line-height: 1.3;
@@ -766,7 +761,7 @@ button {
    margin: 0 auto;
     justify-content: space-evenly;
     width: 80%;
-    height: 50vh;
+    height: 350px;
 }
 .resources {
     display: flex;
@@ -775,7 +770,8 @@ button {
     padding: 20px;
 }
 .link-overlay {
-    height: 35vh;
+    height: 250px;
+
 }
 /* overlay */
 .container{
@@ -807,6 +803,7 @@ button {
     max-width: 400px;
     margin: auto;
     overflow: hidden;
+    text-align: center;
   }
   
   .content .content-overlay {
@@ -931,16 +928,19 @@ button {
   display: flex;
   flex-direction: column;
 }
-.team-picture {
+.team-name {
   border: 2px solid blanchedalmond;
   width: 250px;
   height: 250px;
   margin: 20px;
 }
-.team-information {
+.team-name h2 {
+  margin-top: 50%;
+}
+.team-information, .team-name h2 {
   text-align: center;
 }
-.team-information h2 {
+.team-information h2, .team-name h2 {
   color: blanchedalmond;
   padding: 5px;
   font-size: 23px;
@@ -1018,6 +1018,10 @@ button {
 fieldset {
   border: medium none !important;
   margin-top: 20px;
+}
+.checkbox-container {
+  text-align: left;
+  padding-top: 15px;
 }
 .history-collection {
   padding-top: 10px;
@@ -1157,3 +1161,32 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   img { border: 0;  }
    
   p { font-size: 1.6em; line-height: 1.0em; color: #333; }
+
+  /* media queries */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+  .circle {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}

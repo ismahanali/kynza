@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="typed.js-master/"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +15,8 @@
 
 <body>
     <header>
+
+<div data-aos="fade-up"></div>
         <div class="header-wrapper">
         <div class="nav-wrapper">
             <div class="logo">
@@ -51,10 +54,14 @@
         <div class="header-information">
             <div class="header-text">
                 <div class="top-text">
-                    <p>Reach your <span class="bold">savings goals</span></p>
-                    <p>Meet your <span class="bold">lending needs</span></p>
-                    <p>All while <span class="bold">empowering</span> your community</p>
-                </div>
+                    <div class="header-border">
+                        <p>Reach your <span class="bold">savings target</span></p>
+                        <p>Meet your <span class="bold">lending needs</span></p>
+                        <p>Empower your <span class="bold">community</span></p>
+                    </div>
+  
+                </div
+                >
                 <div class="email-submission">
                     <input type="text" id="email" name="email" placeholder="EMAIL" style="
                     height: 41px;"> <button style="height: 41px;
@@ -74,6 +81,7 @@
             </div>
         </div>
         </div>
+    </div>
     </div>
     </header>
     <section class="main">
@@ -110,7 +118,7 @@
                     </p>
 
                     <div class="button">
-                        <button>Keep in touch</button>
+                        <button>Contact us</button>
                     </div>
                 </div>
             </div>
@@ -176,16 +184,28 @@
             </div>
 
 
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
 
 
 
 
             <script src="typed.js-master/lib/typed.js"></script>
+
             <script>
+             
 
                 var typed = new Typed('.type', {
                     strings: [
                         'ROSCA',
+                        'jamiyah',
+                        'ajo',
+                        'tontine',
+                        'sanduk',
+                        'jangi',
+                        'chitafund',
                         'ekub',
                         'ayuuto',
                         'susu',
@@ -274,14 +294,19 @@
                             <div class="containers">
 
                                 <div class="content">
-                                    <a href="http://www.fao.org/3/y4094E/y4094e04.htm" target="_blank">
+                                    <a href="https://www.investopedia.com/terms/r/rotating-credit-and-savings-association.asp"
+                                    " target="_blank">
                                         <div class="content-overlay"></div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="200"
-                                            height="200">
-                                            <path
-                                                d="M20.485 2.515a.75.75 0 00-1.06 1.06A10.465 10.465 0 0122.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 001.06 1.061A11.965 11.965 0 0024 11c0-3.314-1.344-6.315-3.515-8.485zm-15.91 1.06a.75.75 0 00-1.06-1.06A11.965 11.965 0 000 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 001.06-1.06A10.465 10.465 0 011.5 11c0-2.9 1.174-5.524 3.075-7.425zM8.11 7.11a.75.75 0 00-1.06-1.06A6.98 6.98 0 005 11a6.98 6.98 0 002.05 4.95.75.75 0 001.06-1.061 5.48 5.48 0 01-1.61-3.89 5.48 5.48 0 011.61-3.888zm8.84-1.06a.75.75 0 10-1.06 1.06A5.48 5.48 0 0117.5 11a5.48 5.48 0 01-1.61 3.889.75.75 0 101.06 1.06A6.98 6.98 0 0019 11a6.98 6.98 0 00-2.05-4.949zM14 11a2 2 0 01-1.25 1.855v8.395a.75.75 0 01-1.5 0v-8.395A2 2 0 1114 11z">
-                                            </path>
-                                        </svg>
+                                        height="200">
+                                        <path fill-rule="evenodd"
+                                            d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z">
+                                        </path>
+                                        <path
+                                            d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z">
+                                        </path>
+                                    </svg>
+        
                                         <div class="content-details fadeIn-top">
                                             <h3>Benefits of community saving</h3>
 
@@ -307,11 +332,8 @@
                                         <div class="content-overlay"></div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="200"
                                             height="200">
-                                            <path fill-rule="evenodd"
-                                                d="M3.5 8a5.5 5.5 0 118.596 4.547 9.005 9.005 0 015.9 8.18.75.75 0 01-1.5.045 7.5 7.5 0 00-14.993 0 .75.75 0 01-1.499-.044 9.005 9.005 0 015.9-8.181A5.494 5.494 0 013.5 8zM9 4a4 4 0 100 8 4 4 0 000-8z">
-                                            </path>
                                             <path
-                                                d="M17.29 8c-.148 0-.292.01-.434.03a.75.75 0 11-.212-1.484 4.53 4.53 0 013.38 8.097 6.69 6.69 0 013.956 6.107.75.75 0 01-1.5 0 5.193 5.193 0 00-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0017.29 8z">
+                                                d="M20.485 2.515a.75.75 0 00-1.06 1.06A10.465 10.465 0 0122.5 11c0 2.9-1.174 5.523-3.075 7.424a.75.75 0 001.06 1.061A11.965 11.965 0 0024 11c0-3.314-1.344-6.315-3.515-8.485zm-15.91 1.06a.75.75 0 00-1.06-1.06A11.965 11.965 0 000 11c0 3.313 1.344 6.314 3.515 8.485a.75.75 0 001.06-1.06A10.465 10.465 0 011.5 11c0-2.9 1.174-5.524 3.075-7.425zM8.11 7.11a.75.75 0 00-1.06-1.06A6.98 6.98 0 005 11a6.98 6.98 0 002.05 4.95.75.75 0 001.06-1.061 5.48 5.48 0 01-1.61-3.89 5.48 5.48 0 011.61-3.888zm8.84-1.06a.75.75 0 10-1.06 1.06A5.48 5.48 0 0117.5 11a5.48 5.48 0 01-1.61 3.889.75.75 0 101.06 1.06A6.98 6.98 0 0019 11a6.98 6.98 0 00-2.05-4.949zM14 11a2 2 0 01-1.25 1.855v8.395a.75.75 0 01-1.5 0v-8.395A2 2 0 1114 11z">
                                             </path>
                                         </svg>
                                         <div class="content-details fadeIn-top">
@@ -334,7 +356,7 @@
                             <div class="containers">
 
                                 <div class="content">
-                                    <a href="https://www.tandfonline.com/doi/abs/10.1080/00220388.2010.536219?scroll=top&needAccess=true&journalCode=fjds20"
+                                    <a href="https://www.gdrc.org/icm/rosca/rosca-names.html"
                                         target="_blank">
                                         <div class="content-overlay"></div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="200"
@@ -344,7 +366,7 @@
                                             </path>
                                         </svg>
                                         <div class="content-details fadeIn-top">
-                                            <h3>Economic Inclusion</h3>
+                                            <h3>Local Names</h3>
 
                                         </div>
                                     </a>
@@ -353,7 +375,7 @@
 
                         </div>
                         <div class="caption">
-                            <h4>Documentary</h4>
+                            <h4>Local Names</h4>
                         </div>
                     </div>
 
@@ -402,42 +424,42 @@
                 </div>
                 <div class="team-bios">
                     <div class="team-member">
-                        <div class="team-picture">
-
+                        <div class="team-name">
+                            <h2>Nadiya Ali</h2>
                         </div>
                         <div class="team-information">
-                            <h2>Nadiya Ali</h2>
+                            
                             <p>Founder</p>
                             <p>PhD Candidate, York University</p>
                         </div>
 
                     </div>
                     <div class="team-member">
-                        <div class="team-picture">
-
+                        <div class="team-name">
+                            <h2>Marwan Kassay</h2>
                         </div>
                         <div class="team-information">
-                            <h2>Marwan Kassay</h2>
+                            
                             <p>Business Lead</p>
                             <p>MA Candidate, Waterloo University</p>
                         </div>
                     </div>
                     <div class="team-member">
-                        <div class="team-picture">
-
+                        <div class="team-name">
+                            <h2>Mohit Kishore</h2>
                         </div>
                         <div class="team-information">
-                            <h2>Mohit Kishore</h2>
+                            
                             <p>Technology Partner</p>
                             <p>Business, York University/p>
                         </div>
                     </div>
                     <div class="team-member">
-                        <div class="team-picture">
-
+                        <div class="team-name">
+                            <h2>Ismahan Ali</h2>
                         </div>
                         <div class="team-information">
-                            <h2>Ismahan Ali</h2>
+                          
                             <p>Front-end Developer</p>
                             <p>Juno College</p>
                         </div>
@@ -451,7 +473,7 @@
             <section id="section-5">
                 <div class="container">
                     <form action="https://usebasin.com/f/75480d54429c" id="contact" method="POST">
-                        <h3>Get in Touch</h3>
+                        <h3>Stay Connected</h3>
                         <fieldset>
                             <input type="text" placeholder="Name" name="name" />
                             <label for="name" style="display: none;">Name</label>
@@ -462,16 +484,16 @@
                         </fieldset>
                         <fieldset class="history-collection">
                             <p>Are you familiar with Rotating Savings and Credit Associations?</p>
-                            <div>
-                              <input type="radio" id="contactChoice1"
+                            <div class="checkbox-container">
+                              <input type="checkbox" id="contactChoice1"
                                name="contact" value="Yes">
                               <label id="contactChoice1" for="contactChoice1">Yes</label>
                           
-                              <input type="radio" id="contactChoice2"
+                              <input type="checkbox" id="contactChoice2"
                                name="contact" value="No">
                               <label id="contactChoice1" for="contactChoice2">No</label>
                           
-                              <input type="radio" id="contactChoice3"
+                              <input type="checkbox" id="contactChoice3"
                                name="contact" value="not-sure">
                               <label id="contactChoice1" for="contactChoice3">Not Sure</label>
                             </div>
