@@ -1171,8 +1171,8 @@ footer {
 }
 
 footer p {
+  padding-top: 20px;
   text-align: center;
-  margin: 0 auto;
 }
 
 /* CSS Snippets */
