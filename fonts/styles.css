@@ -1,0 +1,535 @@
+@font-face {
+  font-family: Qanelas;
+  src: url(./fonts/Qanelas/Qanelas-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Circular-bold;
+  src: url(./fonts/circular-bold.otf);
+}
+@font-face {
+  font-family: Circular-reg;
+  src: url(./fonts/CircularStd-Book.otf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: block;
+  min-height: 100vh;
+  color: white;
+  background-color: #f0b730;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+}
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.navigation-contents {
+  width: 100%;
+  min-height: 113px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo p {
+  font-family: "Qanelas";
+  font-size: 55px;
+  letter-spacing: 15px;
+  color: #fff;
+}
+.desktop-nav {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.desktop-nav ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  list-style-type: none;
+  align-content: center;
+  margin: 0 auto;
+}
+.desktop-nav ul li {
+  display: flex;
+  text-decoration: none;
+}
+.desktop-nav ul li a {
+  text-decoration: none;
+  font-family: "Circular-bold";
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 20.25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.contact {
+  border-radius: 35px;
+  background-color: white;
+  justify-content: center;
+
+  width: 7.9166vw;
+  height: 1.927vw;
+}
+.contact-link {
+  padding: 2px;
+  color: #ff3a0b !important;
+}
+.header-contents {
+  display: inline-block;
+  display: flex;
+  width: 1110px;
+  height: 616px;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.main-text p {
+  font-family: "Circular-reg";
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  line-height: 29px;
+  padding: 1% 0;
+  color: white;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 88%;
+}
+.main-text h1 {
+  font-family: "Qanelas";
+  font-size: 60px;
+  line-height: 76px;
+  color: #fff;
+}
+.header-image {
+  opacity: 0.99;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(./images/main-header.png);
+}
+.header-image:hover {
+  opacity: 0.8;
+  transition: ease-in;
+}
+
+.header-button {
+  width: 100%;
+  display: flex;
+  margin-top: -2%;
+  justify-content: center;
+}
+.type {
+  color: white;
+  padding: 10px;
+}
+.download-button {
+  font-family: "Qanelas";
+  z-index: 2;
+  font-size: 23px;
+  line-height: 34px;
+  border-radius: 36px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background: white;
+  color: #ff3a0b;
+  margin: 0 auto;
+  bottom: 0;
+  border: none;
+}
+
+.download-button:hover {
+  background: pink;
+  opacity: 0.9;
+}
+.about-page {
+  display: block;
+  height: 100%;
+  background-color: #f7ede3;
+  display: flex;
+  flex-direction: column;
+}
+.page-title {
+  padding: 2em;
+}
+.page-mantra {
+  padding: 0.5em;
+  font-family: "Qanelas";
+  font-size: 41px;
+  line-height: 62px;
+  text-align: center;
+  color: black;
+}
+.page-header {
+  padding-top: 2%;
+  font-family: "Circular-bold";
+  align-items: center;
+  color: red;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-page-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.about-page-content p {
+  width: 50%;
+  padding: 15px;
+  color: #212529;
+  font-family: "Circular-bold";
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.purple {
+  color: #8e88bf;
+}
+.yellow {
+  color: #f0b730;
+}
+.line {
+  border-bottom: 3px solid #8da274;
+  width: 15%;
+  opacity: 0.7;
+  margin: 10px;
+}
+.information-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 20vh;
+  width: 100%;
+  background: #8e88bf;
+  text-align: center;
+  align-items: center;
+}
+.information-bar p {
+  font-size: 40px;
+  padding: 0.5em;
+  font-family: "Qanelas";
+  font-size: 30px;
+  line-height: 62px;
+  color: blanchedalmond;
+}
+.type {
+  color: #333;
+  width: 50%;
+}
+/* product */
+
+.product-page {
+  width: 100%;
+  height: 100%;
+}
+.google-badge {
+  position: relative;
+  bottom: 30%;
+}
+.product-image-top,
+.product-image-bottom {
+  display: flex;
+}
+
+.mockup-1,
+.mockup-2,
+.mockup-3,
+.mockup-4 {
+  width: 50%;
+  height: 45vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mockup-1 .mockup-header h2,
+.mockup-4 .mockup-header h2,
+.mockup-1 .mockup-caption h4,
+.mockup-4 .mockup-caption h4 {
+  color: rgba(18, 41, 71, 0.8);
+}
+.mockup-1,
+.mockup-4,
+.mockup-2,
+.mockup-3 {
+  background-color: #f7ede3;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.mockup-header h2 {
+  color: rgba(18, 41, 71, 0.8);
+  font-family: "Qanelas", sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding: 10px;
+  line-height: 46px;
+}
+.mockup-caption h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 2em;
+}
+.mockup-image {
+  height: 250px;
+  opacity: 0.3;
+}
+.mockup-image:hover {
+  opacity: 0.9;
+}
+
+/* -------------------------------------------- */
+/* resources */
+.resource-page {
+  height: 20vw;
+  background-color: #f0b730;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.resource-content {
+  flex-wrap: wrap;
+  display: flex;
+  width: 50%;
+  padding-top: 3%;
+  justify-content: space-between;
+}
+.resource-page .page-header {
+  padding: 2%;
+}
+.resource {
+  text-align: center;
+}
+.resource-emojis {
+  font-size: 48px;
+  padding: 4%;
+  height: 70px;
+}
+.resource-page .page-header {
+  color: white !important;
+}
+.resource-caption {
+  color: white;
+  height: 100px;
+  display: block;
+  font-size: 20px;
+  font-family: "Circular-reg;";
+}
+.resource a {
+  text-decoration: none;
+}
+.resource:hover {
+  width: 150px;
+  border-radius: 35px;
+  opacity: 0.9;
+}
+
+/* ----------------------------------------- */
+.team-page {
+  height: 100%;
+  background-color: #f7ede3;
+}
+.team-header .page-mantra {
+  font-family: "Qanelas";
+  padding: 0.5em;
+  color: red;
+  font-size: 41px;
+  line-height: 62px;
+  text-align: center;
+}
+.team-member {
+  height: 230px;
+  width: 430px;
+  background-color: white;
+  border-radius: 35px;
+  margin: 2em;
+  display: flex;
+}
+.team-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+.two {
+  justify-content: center;
+}
+.team-photo {
+  height: 150px;
+  width: 150px;
+  margin: 5%;
+  background-color: #8e88bf;
+  border-radius: 50%;
+}
+.team-name p {
+  font-size: 25px;
+  padding-top: 12px;
+  align-items: center;
+  font-family: "Qanelas";
+  color: red;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 101%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+strong {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1em;
+  color: #333;
+}
